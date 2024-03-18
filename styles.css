@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #bdbdbd;
+}
+
+.board {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Cartão */
+.cartao {
+    width: 48%;
+    padding: 20px;
+    border: 3px solid #101010;
+    position: relative;
+}
+
+.cartao h1, 
+.cartao h3 {
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+
+/* Seleção de cores */
+.input {
+    display: flex;
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    flex-direction: column;
+}
+
+.input-das-cores {
+    margin-bottom: 20px;
+}
+
+.input-das-cores label {
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+.input-das-cores input[type="radio"] {
+    cursor: pointer;
+}
+
+/* Caixas de texto */
+.input-dos-textos {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-dos-textos label {
+    margin-bottom: 10px;
+}
+
+.input-dos-textos input[type="text"] {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+.input-dos-textos h4 {
+    margin-bottom: 4px;
+}
+
+.dropdown {
+    margin-bottom: 10px;
+}
+
+.dropdown select {
+    padding: 8px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .board {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .cartao {
+        width: 100%; 
+        margin-bottom: 20px; 
+        padding-bottom: 50px; 
+    }
+
+    .input {
+        width: 100%; 
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>EDITOR DE CARTOES</h1>
+    </header>
+    
+    <main>
+        <div class="board">
+            <div class="cartao">
+                <h1 id="tituloCartao">Titulo do seu cartao</h1>
+                <h3 id="textoCartao">Insira o texto do seu gggggggSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSggggggggggggggggggggggggggggggggggggggggggggggggggggggggggcartao aqui</h3>
+            </div>
+            
+            <div class="input">
+                <div class="input-das-cores">
+                    <span>
+                        <label for="corDeFundo">Cor de fundo</label>
+                        <input type="color" name="corDeFundo" id="corDeFundo">
+                    </span>
+                </div>
+                
+                <div class="input-das-cores">
+                    <span>
+                        <label for="corDaBorda">Cor da borda</label>
+                        <input type="color" name="corDaBorda" id="corDaBorda">
+                    </span>
+                </div>                
+                
+                <div class="input-dos-textos">
+                    <label for="texto"><h4>ESCREVA UM TEXTO PARA O SEU CARTAO</h4></label>
+                    <input type="text" name="texto" id="texto">
+                    <label for="titulo"><h4>ESCREVA UM TITULO PARA O SEU CARTAO</h4></label>
+                    <input type="text" name="titulo" id="titulo">
+                </div>
+                
+                <div class="dropdown">
+                    <h4>SELECIONE UMA FONTE DO CARTAO</h4>
+                    <select name="font-family" id="font-family">
+                        <option value="Arial">Arial</option>
+                        <option value="Calibri">Calibri</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                    </select>
+                </div>
+                
+                
+            </div>
+        </div>
+    </main>
+</body>
+<script src="/script.js"></script>
+
+</html>
